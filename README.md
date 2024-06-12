@@ -4,15 +4,14 @@ This is the code for emotion recognition in infants.
 
 ## Setup Instructions
 1. **Mount Your Tapedeck Folder:**
-   - Follow the [Mounting Instructions](#mounting-instructions-for-windows-11) to mount your Tapedeck folder on your computer.
+   - Follow the [Mounting Instructions] given to you to mount your Tapedeck folder on your computer.
 
 2. **Install VS Code, Docker, and Dev Containers:**
    - Download and install [Visual Studio Code (VS Code)](https://code.visualstudio.com/).
-   - Install Docker from the [Docker website](https://www.docker.com/).
-   - Open VS Code, go to the Extensions view (`Ctrl+Shift+X`), and install the "Remote - Containers" extension.
+   - Open VS Code, go to the Extensions view (`Ctrl+Shift+X`), and install the "Remote - Containers" extension and the "Docker" Extension.
 
 3. **Connect to Capsian:**
-   - Connect to `capsian.med.upenn.edu` using your Penn credentials.
+   - Connect to `capsian.med.upenn.edu` using your Penn credentials on VS Code.
 
 4. **Install Docker and Dev Containers on Capsian:**
    - Once connected to Capsian, ensure that Docker and the Dev Containers extension are installed and set up in VS Code.
@@ -22,6 +21,7 @@ This is the code for emotion recognition in infants.
    - This folder should contain the following files:
      - `devcontainer.json`
      - `Dockerfile`
+   - Fill up the files accprding to instructions
 
 6. **Configure devcontainer.json:**
    - Add the appropriate mounts in the `devcontainer.json` file to ensure your Tapedeck folder and other necessary directories are accessible within the container.
