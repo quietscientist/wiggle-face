@@ -108,3 +108,9 @@ This is the code for emotion recognition in infants.
   - 34 to 42; introduce column `mean_y_coord_left_brow` to `face_feature_df`.
   - 43 to 51; introduce column `mean_y_coord_right_brow` to `face_feature_df`.
 - Function to calculate the mean y-coordinate for specified keypoints.
+
+3. **Separate_into_frames**
+Takes in a certain number of videos from a path and separates them into frames at a specified fps. It saves the frames in .png format such that all frames of a video will be saved in a subfolder. All subfolders, titled "video_[index]", are saved in a larger folder entitled "frames_first_20_videos".
+
+4. **FER_Residual_Masking_Network**
+This takes in all the previously generated frames and runs a vanilla FER algorithm trained on adult faces. It outputs a CSV file "labels_first_20_videos" with the following columns: infant_id, frame_number, emo_label (emotion label), angry, disgust, fear, happy, sad, surprise, neutral (scores for all emotions). If a face is not recognized, a nan value is introduced for the emotion label and all other scores.
